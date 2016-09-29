@@ -36,9 +36,18 @@ char * grumpyCat( char dest[], char src[], int n ) {
   return dest;
 }
 
+/* my version of strcmp */
+int competition( char s1[], char s2[] ) {
+  int i1 = length( s1 );
+  int i2 = length( s2 );
+  int diff = 0;
+
+  return diff;
+}
+
 void main() {
   char s1[] = "hello";
-  char s2[10] = { 'H', 'i', 'l', 'o', '!' };
+  char s2[10] = { 'H', 'a', 'l', 'o', '\0' };
   
   printf( "\n-----Testing Initiated!-----\n" );
   
@@ -55,17 +64,25 @@ void main() {
 
   /* resetting */
   s2[0] = 'H';
-  s2[1] = 'i';
+  s2[1] = 'a';
 
   printf( "stringNcopy of s1 to s2: %s\n", stringNcopy( s2, s1, 2 ) );
   printf( "s2: %s\n", s2 );
 
   /* resetting */
   s2[0] = 'H';
-  s2[1] = 'i';
+  s2[1] = 'a';
   
   printf( "\n-----Testing Next Function-----\n" );
 
-  printf( "strncat of s2 to s1: %s\n", strncat( s1, s2, 2 ));
-  printf( "s1: %s\n", s1 );
+  printf( "strncat of s1 to s2: %s\n", strncat( s2, s1, 2 ));
+  printf( "s2: %s\n", s2 );
+
+  printf( "grumpyCat of s1 to s2: %s\n", grumpyCat( s2, s1, 2 ));
+  printf( "s2: %s\n", s2 ); /*should be Halohehe */
+
+  printf( "\n-----Testing Next Function-----\n" );
+
+  char s3[] = "";
+  printf( "strcmp of s3 and s1: %d\n", strcmp( s3, s1 ));
 }
