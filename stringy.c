@@ -60,9 +60,12 @@ char * stringyChar( char s[], char c ) {
   int i = 0;
   int l = length( s );
   
-  while( (i < l) || (s[i] != c) )
+  while(s[i] != c) {
+    if (i >= l)
+      return '\0'; 
     i++;
-  
+  }
+
   return s + i;
 }
 
