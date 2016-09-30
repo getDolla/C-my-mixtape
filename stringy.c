@@ -122,6 +122,7 @@ void main() {
   printf( "strcmp of s1 and s2: %d\n", strcmp( s1, s2 ));
   printf( "strcmp of s4 and s1: %d\n", strcmp( s4, s1 ));
   printf( "strcmp of s4 and s5: %d\n", strcmp( s4, s5 ));
+
   printf( "competition of s3 and s1: %d\n", competition( s3, s1 ));
   printf( "competition of s1 and s2: %d\n", competition( s1, s2 ));
   printf( "competition of s4 and s1: %d\n", competition( s4, s1 ));
@@ -132,6 +133,7 @@ void main() {
   printf( "strchr of 'c' in 'hello': %s\n", strchr( s1, 'c' ) );
   printf( "strchr of 'e' in 'hello': %s\n", strchr( s1, 'e' ) );
   printf( "strchr of 'l' in 'hello': %s\n", strchr( s1, 'l' ) );
+
   printf( "stringyChar of 'c' in 'hello': %s\n", stringyChar( s1, 'c' ) );
   printf( "stringyChar of 'l' in 'hello': %s\n", stringyChar( s1, 'l' ) );
   printf( "stringyChar of 'e' in 'hello': %s\n", stringyChar( s1, 'e' ) );
